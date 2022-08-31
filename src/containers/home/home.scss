@@ -1,2 +1,201 @@
-// @import '../../styles/variables.scss';
+@import '../../styles/common.scss';
 
+.banner {
+    padding: 210px 0 250px;
+    &Content {
+        @extend %justifyBetween-alignCenter;
+    }
+    &Text {
+        flex-basis: 57%;
+        flex-shrink: 0;
+    }
+    h1 {
+        @extend %typeface-bold-70;
+        color: $color-black-0;
+        margin-bottom: 30px;
+    }
+    p {
+        @extend %typeface-medium-28;
+        color: $color-black-0;
+    }
+    .bannerImage {
+        flex-basis: 43%;
+    }
+    .imageWrapper {
+        max-width: 498px;
+        height: 343px;
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+.about {
+    background-color: #ebfff4;
+    padding: 72px 0;
+    &Heading {
+        text-align: center;
+        width: 533px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 64px;
+        h2 {
+            margin-bottom: 25px;
+        }
+        p {
+            @extend %typeface-regular-16;
+            color: #1f1f1f;
+        }
+    }
+    &Content {
+        @extend %justifyBetween-alignCenter;
+        gap: 34px;
+    }
+    &Image {
+        flex-basis: 50%;
+    }
+    &Video {
+        flex-basis: 50%;
+        text-align: center;
+    }
+    iframe {
+        vertical-align: top;
+    }
+    .imageWrapper {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+}
+
+.benefits {
+    padding: 85px 0 20px;
+    .container {
+        max-width: 960px;
+    }
+    h2 {
+        color: $color-black-0;
+        text-align: center;
+    }
+    &Content {
+        @extend %justifyCenter-alignCenter;
+    }
+    &Image {
+        flex-basis: 50%;
+    }
+    .imageWrapper {
+        width: 425px;
+        height: 590px;
+        img {
+            object-fit: contain;
+        }
+    }
+    &Text {
+        flex-basis: 50%;
+    }
+    &List {
+        @extend %alignCenter;
+        margin-bottom: 32px;
+    }
+    &Icon {
+        img {
+            max-width: 70px;
+        }
+    }
+    &Details {
+        margin-left: 20px;
+        p {
+            @extend %typeface-regular-16;
+            color: $color-black-1;
+        }
+    }
+    h3 {
+        @extend %typeface-semibold-16;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        .imageWrapper {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .about {
+        .imageWrapper {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 130px 0 60px;
+        &Content {
+            flex-direction: column-reverse;
+        }
+        &Text {
+        }
+        h1 {
+            font-size: 34px;
+        }
+        p {
+            font-size: 17px;
+        }
+        .bannerImage {
+            margin-bottom: 30px;
+        }             
+    }
+    .about {
+        &Content {
+            flex-direction: column;
+            justify-content: center;
+            gap: 0px;
+        }
+        &Image {
+            flex-basis: 100%;
+        }
+        &Video {
+            flex-basis: 100%;
+        }         
+    }
+    .benefits {
+        &Content {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .banner {
+        .imageWrapper {
+            width: 100%;
+            height: auto;
+        }   
+    }
+    .about {
+        iframe {
+            width: 100%;
+        }
+        .imageWrapper {
+            width: 100%;
+            height: auto;
+        }  
+    }
+    .benefits {
+        &Image {
+            margin-bottom: 32px;
+        }
+        &Details {
+            margin-left: 0;
+        }
+        .imageWrapper {
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+}

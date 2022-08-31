@@ -1,0 +1,143 @@
+// colors
+$color-black-0: #000000;
+$color-black-1: #4c4c4c;
+$color-black-2: #0a0a0a99;
+$color-black-3: #1f1f1f;
+$color-white-0: #ffffff;
+$color-blue-0: #195da1;
+$color-green-0: #78ac95;
+$color-glade-0: #c5cb9b;
+$color-orange-0: #ef6036;
+$color-grey-0: #999999;
+
+// ****** typeface  ****** //
+
+// light typeface
+%typeface-light-14 {
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+// regular typeface
+%typeface-regular-14 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+%typeface-regular-17 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+%typeface-regular-16 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+%typeface-regular-15 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+%typeface-regular-20 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+// bold typeface
+%typeface-bold-70 {
+    font-size: 7rem;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+%typeface-bold-40 {
+    font-size: 4rem;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+%typeface-bold-20 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+%typeface-bold-44 {
+    font-size: 4.4rem;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+// medium typeface
+%typeface-medium-28 {
+    font-size: 2.8rem;
+    line-height: 1.6em;
+    font-weight: 500;
+}
+%typeface-medium-17 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+%typeface-medium-14 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+// semibold typeface
+%typeface-semibold-18 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+%typeface-semibold-16 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 34px;
+}
+%typeface-semibold-34 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 1.1em;
+}
+%typeface-semibold-20 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+// flex styles
+%justifyBetween {
+    display: flex;
+    justify-content: space-between;
+}
+%justifyCenter {
+    display: flex;
+    justify-content: center;
+}
+%justifyEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+%alignCenter {
+    display: flex;
+    align-items: center;
+}
+%alignEnd {
+    display: flex;
+    align-items: flex-end;
+}
+%justifyBetween-alignCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%justifyCenter-alignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%justifyEnd-alignEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
