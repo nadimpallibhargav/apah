@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/apah/static/css/main.2503c674.css",
-    "main.js": "/apah/static/js/main.dcb6bc18.js",
+    "main.js": "/apah/static/js/main.03d31f6d.js",
     "static/media/westernGhats.svg": "/apah/static/media/westernGhats.4aea6917d354a506baf4f5c49623df07.svg",
     "static/media/apahWater.png": "/apah/static/media/apahWater.34101d758d87d0b8fb8c.png",
     "static/media/apahBenefits.webp": "/apah/static/media/apahBenefits.c28ab8f844c939a15822.webp",
     "static/media/benefitsIcon.png": "/apah/static/media/benefitsIcon.b94d6ad06a65153f0335.png",
     "index.html": "/apah/index.html",
     "main.2503c674.css.map": "/apah/static/css/main.2503c674.css.map",
-    "main.dcb6bc18.js.map": "/apah/static/js/main.dcb6bc18.js.map"
+    "main.03d31f6d.js.map": "/apah/static/js/main.03d31f6d.js.map"
   },
   "entrypoints": [
     "static/css/main.2503c674.css",
-    "static/js/main.dcb6bc18.js"
+    "static/js/main.03d31f6d.js"
   ]
 }
