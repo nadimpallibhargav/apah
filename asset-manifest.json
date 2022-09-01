@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/apah/static/css/main.62e84e4e.css",
-    "main.js": "/apah/static/js/main.e856b72c.js",
+    "main.css": "/apah/static/css/main.721fc508.css",
+    "main.js": "/apah/static/js/main.8ceefeb8.js",
     "static/media/westernGhats.svg": "/apah/static/media/westernGhats.4aea6917d354a506baf4f5c49623df07.svg",
     "static/media/apahWater.png": "/apah/static/media/apahWater.34101d758d87d0b8fb8c.png",
     "static/media/apahBenefits.webp": "/apah/static/media/apahBenefits.c28ab8f844c939a15822.webp",
     "static/media/benefitsIcon.png": "/apah/static/media/benefitsIcon.b94d6ad06a65153f0335.png",
+    "static/media/testimonialOne.jpeg": "/apah/static/media/testimonialOne.b9835745a0cdfee72a15.jpeg",
     "index.html": "/apah/index.html",
-    "main.62e84e4e.css.map": "/apah/static/css/main.62e84e4e.css.map",
-    "main.e856b72c.js.map": "/apah/static/js/main.e856b72c.js.map"
+    "main.721fc508.css.map": "/apah/static/css/main.721fc508.css.map",
+    "main.8ceefeb8.js.map": "/apah/static/js/main.8ceefeb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e84e4e.css",
-    "static/js/main.e856b72c.js"
+    "static/css/main.721fc508.css",
+    "static/js/main.8ceefeb8.js"
   ]
 }
