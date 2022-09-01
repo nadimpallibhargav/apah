@@ -1,6 +1,8 @@
 @import '../../styles/common.scss';
 
 header {
+    background-color: rgba(255,255,255,.9);
+    transition: all 0.5s ease;
     padding: 28px 0;
     position: fixed;
     top: 0;
@@ -14,6 +16,14 @@ header {
                 max-width: 1242px;
                 padding: 0;
             }
+    }
+    &.active {
+        padding: 12px 0;        
+        .deskLogo {
+            img {
+                max-width: 40px;
+            }
+        }
     }
     nav {
         @extend %justifyCenter-alignCenter;

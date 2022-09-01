@@ -1,0 +1,89 @@
+@import '../../styles/common.scss';
+
+.contact {
+    padding: 85px 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    h3 {
+        @extend %typeface-light-28;
+        span {
+            color: #81D200;
+        }
+    }
+    p {
+        @extend %typeface-light-17;
+        margin-bottom: 35px;
+    }
+    &Content {
+        @extend %justifyCenter-alignCenter;
+    }
+    &Form {
+        text-align: center;
+        flex-basis: 50%;
+    }
+    form {
+        max-width: 490px;
+        padding: 45px 55px;
+        background-color: $color-grey-1;
+    }
+    .inputWrapper {
+        margin-bottom: 18px;
+    }
+    input {
+        width: 100%;
+        outline: none;
+        border: 0;
+        padding: 20px;
+        text-align: center;
+        @extend %typeface-regular-16;
+        &::placeholder {
+            text-align: center;
+            color: $color-grey-2;
+            @extend %typeface-regular-16;
+        }            
+    }
+    &Image {
+        flex-basis: 50%;
+    }
+    .imageWrapper {
+        margin-left: auto;
+        max-width: 534px;
+        height: 534px;
+        img {
+            object-fit: contain;
+        }
+    }
+    button {
+        border: 0;
+        background-color: #81D200;
+        color: $color-white-0;
+        @extend %typeface-semibold-18;
+        padding: 20px;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        &Content {
+            flex-direction: column-reverse;
+        }
+        &Form {
+            width: 100%;
+        }
+        .imageWrapper {
+            margin-bottom: 35px;
+            height: auto;
+        }
+        input {
+            padding: 15px;
+        }
+        form {
+            padding: 25px 20px;
+            max-width: 100%;
+        }
+        button {
+            padding: 12px;
+        }
+    }
+}

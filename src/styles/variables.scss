@@ -9,6 +9,8 @@ $color-green-0: #78ac95;
 $color-glade-0: #c5cb9b;
 $color-orange-0: #ef6036;
 $color-grey-0: #999999;
+$color-grey-1: #e9e9e9;
+$color-grey-2: #cbcace;
 
 // ****** typeface  ****** //
 
@@ -16,6 +18,14 @@ $color-grey-0: #999999;
 %typeface-light-14 {
     font-weight: 200;
     font-size: 1.4rem;
+}
+%typeface-light-17 {
+    font-weight: 200;
+    font-size: 1.7rem;
+}
+%typeface-light-28 {
+    font-weight: 200;
+    font-size: 2.8rem;
 }
 
 // regular typeface
@@ -70,6 +80,11 @@ $color-grey-0: #999999;
 %typeface-medium-28 {
     font-size: 2.8rem;
     line-height: 1.6em;
+    font-weight: 500;
+}
+%typeface-medium-20 {
+    font-size: 2rem;
+    line-height: 1.4;
     font-weight: 500;
 }
 %typeface-medium-17 {
