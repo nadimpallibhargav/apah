@@ -7,6 +7,7 @@ import Benefits from './sections/benefitsSection';
 import Product from './sections/productSection';
 import Testimonial from './sections/testimonialSection';
 import Contact from './sections/contactSection';
+import Footer from '../../components/footer';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Product />
       <Testimonial />
       <Contact />
+      <Footer />
     </>
   );
 };

@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: $color-black-0;
 }
 
 img {
@@ -26,8 +27,12 @@ li {
   list-style: none;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 a {
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .container {

@@ -10,13 +10,11 @@
         flex-shrink: 0;
     }
     h1 {
-        @extend %typeface-bold-70;
-        color: $color-black-0;
+        @extend %typeface-bold-70;        
         margin-bottom: 30px;
     }
     p {
-        @extend %typeface-medium-28;
-        color: $color-black-0;
+        @extend %typeface-medium-28;        
     }
     .bannerImage {
         flex-basis: 43%;
@@ -74,8 +72,7 @@
         max-width: 960px;
     }
     &Heading {
-        h2 {
-            color: $color-black-0;
+        h2 {            
             text-align: center;
         }
     }
@@ -112,7 +109,7 @@
         }
     }
     h3 {
-        @extend %typeface-semibold-16;
+        @extend %typeface-semibold-16;        
     }
 }
 
@@ -125,12 +122,10 @@
         @extend %justifyBetween-alignCenter;
     }
     h2 {
-        @extend %typeface-bold-40;
-        color: $color-black-0;
+        @extend %typeface-bold-40;        
         margin-bottom: 20px;
         & + p {
-            @extend %typeface-medium-17;
-            color: $color-black-0;
+            @extend %typeface-medium-17;            
             margin-bottom: 25px;
         }
     }
@@ -175,13 +170,11 @@
         text-align: center;
     }
     h3 {
-        @extend %typeface-medium-20;
-        color: $color-black-0;
+        @extend %typeface-medium-20;        
         margin-bottom: 10px;        
     }
     p {
-        @extend %typeface-regular-14;
-        color: $color-black-0;
+        @extend %typeface-regular-14;        
     }
     
     .swiper {
@@ -241,6 +234,7 @@
         @extend %typeface-light-28;
         span {
             color: #81D200;
+            font-weight: 400;
         }
     }
     p {
@@ -293,6 +287,7 @@
         @extend %typeface-semibold-18;
         padding: 20px;
         width: 100%;
+        cursor: pointer;
     }
 }
 

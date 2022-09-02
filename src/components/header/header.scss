@@ -1,6 +1,6 @@
 @import '../../styles/common.scss';
 
-header {
+header {    
     background-color: rgba(255,255,255,.9);
     transition: all 0.5s ease;
     padding: 28px 0;
@@ -8,6 +8,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
     .headerContainer {
         width: 100%;
         padding: 0 20px;
@@ -124,6 +125,8 @@ header {
                 font-size: 20px;
                 font-weight: 200;
                 line-height: 30px;
+                display: block;
+                text-align: center;
             }
         }
     }
