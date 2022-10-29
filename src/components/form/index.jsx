@@ -1,41 +1,34 @@
-import axios from 'axios'
-import React, {useState} from 'react'
-import './contactForm.scss'
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser';
+import './contactForm.scss';
 
 const ContactForm = () => {
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobile, setMobile] = useState('');
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      Name: name,
-      Email: email,
-      Mobile: mobile
-    }
 
-    axios.post('https://sheet.best/api/sheets/145fd9ea-9c69-4dd8-b334-147f831d5381',data).then((response)=>{
-      console.log(response);
-      setName('');
-      setEmail('');
-      setMobile('');
-    });
-  }  
+    emailjs.sendForm('service_b0frvz9', 'template_v2az3zo', form.current, 'L4EmhoTI2BsKkdWyX')
+      .then((result) => {
+          console.log('success');
+      }, (error) => {
+          console.log('error sending');
+      });
+  };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={sendEmail}>
         <h3>Get <span>50% Discount</span></h3>
         <p>Just in One Click</p>
         <div className="inputWrapper">
-            <input type="text" placeholder='Enter Your Name' value={name} onChange={(e)=>setName(e.target.value)} />
+            <input type="text" placeholder='Enter Your Name' name="from_name" />
         </div>
         <div className="inputWrapper">
-            <input type="email" placeholder='Enter Your Email' value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input type="email" placeholder='Enter Your Email' name="user_email" />
         </div>
         <div className="inputWrapper">
-            <input type="text" placeholder='Enter Your Mobile' value={mobile} onChange={(e)=>setMobile(e.target.value)} />
+            <input type="text" placeholder='Enter Your Mobile' name="user_mobile" />
         </div>
         <button type='submit'>GET A DISCOUNT</button>
     </form>
