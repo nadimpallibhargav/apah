@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.1",
     "sass": "^1.54.6",
     "sass-loader": "^13.0.2"
